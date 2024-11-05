@@ -1,2 +1,3 @@
 # Shop.Co-project
- Clothing store
+
+Clothing store
