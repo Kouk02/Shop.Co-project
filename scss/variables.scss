@@ -1,0 +1,69 @@
+// variables.scss
+$black: #000000;
+$gallery: #f0f0f0;
+$white: #ffffff;
+$green-haze: #01ab31;
+$red-orange: #ff3333;
+$judge-gray: #4f4631;
+$stromboli: #314f4a;
+$martinique: #31344f;
+$sunglow: #ffc633;
+$malachite: #00c12b;
+$red: #f50606;
+$turbo: #f5dd06;
+$chilean-fire: #f57906;
+$bright-turquoise: #06caf5;
+$blue-ribbon: #063af5;
+$electric-violet: #7d06f5;
+$hollywood-cerise: #f506a4;
+
+// Шляхи до шрифтів
+$font-integral-regular: '../fonts/IntegralCF-Regular.ttf';
+$font-integral-medium: '../fonts/IntegralCF-Medium.ttf';
+$font-integral-bold: '../fonts/IntegralCF-Bold.ttf';
+
+$font-satoshi-bold: '../fonts/Satoshi-Bold.otf';
+$font-satoshi-regular: '../fonts/Satoshi-Regular.otf';
+$font-satoshi-medium: '../fonts/Satoshi-Medium.otf';
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url($font-integral-regular) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url($font-integral-bold) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Integral CF';
+  src: url($font-integral-medium) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url($font-satoshi-regular) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url($font-satoshi-bold) format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url($font-satoshi-medium) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}

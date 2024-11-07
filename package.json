@@ -1,8 +1,18 @@
 {
   "scripts": {
-  "scss": "sass --watch css/styles.scss:styles.css" 
-},
+    "sass": "sass scss/styles.scss css/styles.css --watch"
+  },
   "devDependencies": {
     "prettier": "^3.3.3"
+  },
+  "name": "shop.co-project",
+  "version": "1.0.0",
+  "description": "Clothing store",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.80.6"
   }
 }

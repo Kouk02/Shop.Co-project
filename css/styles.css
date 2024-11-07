@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Integral CF";
+  src: url("../fonts/IntegralCF-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url("../fonts/IntegralCF-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url("../fonts/IntegralCF-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 428px;
+  }
+  .container-header {
+    width: 428px;
+  }
+  .list-button-header {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    list-style: none;
+    height: 64px;
+  }
+  .button-burger-mobile {
+    margin-top: 14px;
+    width: 24px;
+    height: 24px;
+  }
+  .button-burger-mobile .burger-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  .button-search-mobile {
+    margin-top: 14px;
+    width: 20px;
+    height: 20px;
+  }
+  .button-search-mobile .search-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .button-cart-mobile {
+    margin-top: 14px;
+    width: 22px;
+    height: 20px;
+  }
+  .button-cart-mobile .cart-icon {
+    width: 22px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .button-account-mobile {
+    margin-top: 14px;
+    max-height: 24px;
+    max-width: 24px;
+  }
+  .button-account-mobile .account-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .item-button-header:nth-of-type(1) {
+    margin-right: 19px;
+  }
+  .item-button-header:nth-of-type(2) {
+    margin-right: 96px;
+  }
+  .item-button-header:nth-of-type(3),
+  .item-button-header:nth-of-type(4) {
+    margin-right: 14px;
+  }
+  .title-logo-link {
+    font-family: "Integral CF", sans-serif;
+    font-weight: Bold;
+    color: #000000;
+    font-size: 25px;
+  }
+}
+body {
+  font-family: "Plus Jakarta Sans", medium;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  all: unset;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a,
+.link {
+  text-decoration: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+.list,
+.svg {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+header {
+  display: block;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/*# sourceMappingURL=styles.css.map */

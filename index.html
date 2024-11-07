@@ -4,9 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>Shop.CO</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="container-header container">
+        <ul class="list-button-header">
+          <li class="item-button-header">
+            <button type="button" class="button-burger-mobile" data-menu-open>
+              <svg class="burger-icon">
+                <use href="./images/icon/sprite.svg#icon-burger"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="item-button-header">
+            <a href="home-page.html" class="nav-link" data-page="home-page.html">
+              <h2 class="title-logo-link">SHOP.CO</h2>
+            </a>
+          </li>
+          <li class="item-button-header">
+            <button type="button" class="button-search-mobile" data-menu-open>
+              <svg class="search-icon">
+                <use href="./images/icon/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="item-button-header">
+            <button type="button" class="button-cart-mobile" data-menu-open>
+              <svg class="cart-icon">
+                <use href="./images/icon/sprite.svg#icon-cart"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="item-button-header">
+            <button type="button" class="button-account-mobile" data-menu-open>
+              <svg class="account-icon">
+                <use href="./images/icon/sprite.svg#icon-human"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="content"></div>
+    <script src="./js/pageLoader.js"></script>
   </body>
 </html>
