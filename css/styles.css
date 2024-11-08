@@ -108,10 +108,9 @@
   }
   .home-page-hero-section {
     background-color: #f0f0f0;
+    width: 390px;
   }
   .home-page-hero-section .home-page-hero-container {
-    padding-left: 16px;
-    padding-right: 16px;
     padding-top: 40px;
   }
   .home-page-hero-section .home-page-hero-title {
@@ -196,6 +195,23 @@
     font-size: 12px;
     opacity: 0.6;
     line-height: 1.8333333333;
+  }
+  .home-page-hero-section .container-hero-image {
+    position: relative;
+  }
+  .home-page-hero-section .hero-icon-big-star {
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    top: 40px;
+    right: 21px;
+  }
+  .home-page-hero-section .hero-icon-medium-star {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 127px;
+    left: 27px;
   }
 }
 body {

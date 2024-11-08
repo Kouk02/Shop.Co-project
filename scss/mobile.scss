@@ -85,9 +85,8 @@
 // START HOME-PAGE
 .home-page-hero-section{
     background-color: $gallery;
+    width: 390px;
 .home-page-hero-container{
-    padding-left: 16px;
-    padding-right: 16px;
     padding-top: 40px;
 }
 .home-page-hero-title{
@@ -176,6 +175,24 @@
     font-size: 12px;
     opacity: 0.6;
     @include responsive-line-height(12px, 22px);
+}
+.container-hero-image{
+    position: relative;
+}
+
+.hero-icon-big-star{
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    top: 40px;
+    right: 21px;
+}
+.hero-icon-medium-star{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 127px;
+    left: 27px;
 }
 }
 
