@@ -67,3 +67,11 @@ $font-satoshi-medium: '../fonts/Satoshi-Medium.otf';
   font-weight: 500;
   font-style: normal;
 }
+
+
+//! MIXIN
+@mixin responsive-line-height($font-size, $line-height) {
+  line-height: ($line-height / $font-size);
+}
+
+// @include responsive-line-height(36px, 34px);
