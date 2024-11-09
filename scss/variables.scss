@@ -1,4 +1,7 @@
 // variables.scss
+@use "sass:math";
+
+
 $black: #000000;
 $gallery: #f0f0f0;
 $white: #ffffff;
@@ -71,7 +74,7 @@ $font-satoshi-medium: '../fonts/Satoshi-Medium.otf';
 
 //! MIXIN
 @mixin responsive-line-height($font-size, $line-height) {
-  line-height: ($line-height / $font-size);
+  line-height: math.div($line-height, $font-size);
 }
 
 // @include responsive-line-height(36px, 34px);
