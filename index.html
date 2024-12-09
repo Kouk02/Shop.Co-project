@@ -9,35 +9,65 @@
   <body>
     <header>
       <div class="container-header container">
-        <ul class="list-button-header">
+        <ul class="list-navigation-header">
           <li class="item-button-header">
-            <button type="button" class="button-burger-mobile" data-menu-open>
-              <svg class="burger-icon">
-                <use href="./images/icon/sprite.svg#icon-burger"></use>
-              </svg>
-            </button>
+            <div class="container-title-header-menu">
+              <button type="button" class="button-burger-mobile" data-menu-open>
+                <svg class="burger-icon">
+                  <use href="./images/icon/sprite.svg#icon-burger"></use>
+                </svg>
+              </button>
+              <a href="#" class="nav-link" data-page="home-page.html">
+                <h2 class="title-logo-link">SHOP.CO</h2>
+              </a>
+            </div>
+          </li>
+          <li class="item-button-header header-navigation">
+            <nav class="nav-header">
+              <a href="" class="nav-item-header">Shop</a>
+              <button class="nav-link-button-list-shop">
+                <svg class="icon-arrow-button-shop">
+                  <use href="./images/icon/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
+              <a href="" class="nav-item-header">On Sale</a>
+              <a href="" class="nav-item-header">New Arrivals</a>
+              <a href="" class="nav-item-header">Brands</a>
+            </nav>
           </li>
           <li class="item-button-header">
-            <a href="#" class="nav-link" data-page="home-page.html">
-              <h2 class="title-logo-link">SHOP.CO</h2>
-            </a>
+            <div class="search-container-header">
+              <input
+                type="text"
+                class="search-box"
+                id="search-input"
+                placeholder="Search for products..."
+                onkeydown="if (event.key === 'Enter') searchProducts()"
+              />
+              <button onclick="searchProducts()" type="button" class="button-search" data-menu-open>
+                <svg class="search-icon">
+                  <use href="./images/icon/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </div>
           </li>
           <li class="item-button-header">
-            <button type="button" class="button-search-mobile" data-menu-open>
-              <svg class="search-icon">
+            <button
+              onclick="toggleSearchField()"
+              type="button"
+              class="button-search-mobile"
+              data-menu-open
+            >
+              <svg class="search-icon-mobile">
                 <use href="./images/icon/sprite.svg#icon-search"></use>
               </svg>
             </button>
-          </li>
-          <li class="item-button-header">
-            <button type="button" class="button-cart-mobile" data-menu-open>
+            <button type="button" class="button-cart" data-menu-open>
               <svg class="cart-icon">
                 <use href="./images/icon/sprite.svg#icon-cart"></use>
               </svg>
             </button>
-          </li>
-          <li class="item-button-header">
-            <button type="button" class="button-account-mobile" data-menu-open>
+            <button type="button" class="button-account" data-menu-open>
               <svg class="account-icon">
                 <use href="./images/icon/sprite.svg#icon-human"></use>
               </svg>
