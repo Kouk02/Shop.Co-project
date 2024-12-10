@@ -41,6 +41,81 @@
   .section {
     width: 100%;
   }
+  .container-header {
+    display: flex;
+    margin: 20px 0px;
+    max-height: 24px;
+    padding: 0px 18px;
+  }
+  .list-navigation-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .list-navigation-header li:first-child {
+    align-self: flex-start;
+  }
+  .container-title-header-menu {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+  }
+  .button-burger-mobile {
+    width: 20px;
+    height: 20px;
+  }
+  .burger-icon {
+    margin-top: 3px;
+    width: 20px;
+    height: 20px;
+  }
+  .title-logo-link {
+    font-family: "Integral CF", sans-serif;
+    font-weight: Bold;
+    color: #000000;
+    font-size: 25px;
+    line-height: 18px;
+    padding-bottom: 2px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+  .header-navigation {
+    display: none;
+  }
+  .search-box {
+    display: none;
+  }
+  .button-search {
+    display: none;
+  }
+  .button-search-mobile {
+    width: 22px;
+    height: 22px;
+    margin-right: 14px;
+  }
+  .button-search-mobile .search-icon-mobile {
+    width: 22px;
+    height: 22px;
+  }
+  .button-cart {
+    width: 22px;
+    height: 22px;
+    margin-right: 14px;
+  }
+  .button-cart .cart-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .button-account {
+    max-height: 22px;
+    max-width: 22px;
+  }
+  .button-account .account-icon {
+    width: 22px;
+    height: 22px;
+  }
   .home-page-hero-section {
     background-color: #f0f0f0;
   }
@@ -51,7 +126,7 @@
     font-family: "Integral CF", sans-serif;
     font-weight: Bold;
     color: #000000;
-    font-size: 30px;
+    font-size: 36px;
     line-height: 0.9444444444;
     margin-bottom: 20px;
   }
@@ -130,25 +205,28 @@
     opacity: 0.6;
     line-height: 1.8333333333;
   }
-  .container-hero-image {
+  .container-hero-image-mobile {
     position: relative;
   }
-  .home-page-hero-image {
+  .home-page-hero-image-mobile {
     width: 100%;
   }
-  .hero-icon-big-star {
+  .hero-icon-big-star-mobile {
     position: absolute;
     width: 76px;
     height: 76px;
     top: 40px;
     right: 21px;
   }
-  .hero-icon-medium-star {
+  .hero-icon-medium-star-mobile {
     position: absolute;
     width: 44px;
     height: 44px;
     top: 127px;
     left: 27px;
+  }
+  .container-hero-image-laptop {
+    display: none;
   }
   .home-page-section-brand {
     background-color: #000000;
@@ -168,80 +246,6 @@
     justify-content: center;
     gap: 31px;
     padding-bottom: 40px;
-  }
-  .container-header {
-    display: flex;
-    margin: 20px 16px 20px 16px;
-    max-height: 24px;
-  }
-  .list-navigation-header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-  .list-navigation-header li:first-child {
-    align-self: flex-start;
-  }
-  .container-title-header-menu {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    text-align: center;
-  }
-  .button-burger-mobile {
-    width: 20px;
-    height: 20px;
-  }
-  .burger-icon {
-    margin-top: 3px;
-    max-width: 20px;
-    max-height: 20px;
-  }
-  .title-logo-link {
-    font-family: "Integral CF", sans-serif;
-    font-weight: Bold;
-    color: #000000;
-    font-size: 25px;
-    line-height: 18px;
-    padding-bottom: 2px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  }
-  .header-navigation {
-    display: none;
-  }
-  .search-box {
-    display: none;
-  }
-  .button-search {
-    display: none;
-  }
-  .button-search-mobile {
-    width: 22px;
-    height: 22px;
-    margin-right: 14px;
-  }
-  .button-search-mobile .search-icon-mobile {
-    width: 22px;
-    height: 22px;
-  }
-  .button-cart {
-    width: 22px;
-    height: 22px;
-    margin-right: 14px;
-  }
-  .button-cart .cart-icon {
-    width: 22px;
-    height: 22px;
-  }
-  .button-account {
-    max-height: 22px;
-    max-width: 22px;
-  }
-  .button-account .account-icon {
-    width: 22px;
-    height: 22px;
   }
 }
 body {
@@ -295,10 +299,10 @@ header {
   margin-right: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .container-header {
     display: flex;
-    width: 100%;
+    width: 1240px;
     margin-top: 24px;
     margin-bottom: 24px;
   }
@@ -406,6 +410,126 @@ header {
   }
   .button-search-mobile .search-icon-mobile {
     display: none;
+  }
+  .home-page-hero-section {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+  }
+  .home-page-hero-container {
+    width: 1240px;
+    background-image: url(/images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 70px) top;
+    padding: 103px 0px 116px 0px;
+  }
+  .home-page-hero-list-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 596px;
+  }
+  .home-page-hero-title {
+    font-family: "Integral CF", sans-serif;
+    height: 173px;
+    font-weight: Bold;
+    color: #000000;
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
+  .home-page-hero-text {
+    font-family: "Satoshi", sans-serif;
+    font-weight: normal;
+    color: #000000;
+    height: 33px;
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 1.375;
+    margin-bottom: 32px;
+  }
+  .home-page-button-hero {
+    width: 210px;
+    height: 52px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 62px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .hero-button-name {
+    font-family: "Satoshi", sans-serif;
+    font-weight: medium;
+    font-size: 16px;
+  }
+  .home-page-hero-list {
+    display: flex;
+    height: 74px;
+  }
+  .home-page-item-list {
+    width: 100%;
+  }
+  .divider-hero-first,
+  .divider-hero-second {
+    display: block;
+    width: 1px;
+    height: 74px;
+    background-color: #000000;
+    opacity: 0.1;
+    margin: 0px 32px;
+  }
+  .home-page-text-first {
+    font-family: "Satoshi", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #000000;
+  }
+  .home-page-text-second {
+    font-family: "Satoshi", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    opacity: 0.6;
+    white-space: nowrap;
+    line-height: 1.375;
+  }
+  .container-hero-image-mobile {
+    display: none;
+  }
+  .container-hero-image-laptop {
+    position: relative;
+  }
+  .hero-icon-big-star-laptop {
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    top: -460px;
+    right: -660px;
+  }
+  .hero-icon-medium-star-laptop {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: -250px;
+    right: -80px;
+  }
+  .home-page-section-brand {
+    background-color: #000000;
+  }
+  .container-brand {
+    padding: 0 16px;
+  }
+  .list-brand-first {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  .list-brand-second {
+    display: flex;
+    justify-content: center;
+    gap: 31px;
+    padding-bottom: 40px;
   }
 }
 
