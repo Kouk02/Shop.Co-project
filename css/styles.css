@@ -247,6 +247,9 @@
     gap: 31px;
     padding-bottom: 40px;
   }
+  .container-brand-laptop {
+    display: none;
+  }
 }
 body {
   font-family: "Plus Jakarta Sans", medium;
@@ -515,21 +518,19 @@ header {
   .home-page-section-brand {
     background-color: #000000;
   }
-  .container-brand {
-    padding: 0 16px;
-  }
-  .list-brand-first {
+  .container-brand-laptop {
     display: flex;
     justify-content: center;
-    gap: 34px;
-    padding-top: 40px;
-    margin-bottom: 20px;
+    padding: 0 10px;
+    gap: 106px;
   }
-  .list-brand-second {
+  .list-brand {
     display: flex;
-    justify-content: center;
-    gap: 31px;
-    padding-bottom: 40px;
+    gap: 106px;
+    padding: 42px 0px;
+  }
+  .container-brand-mobile {
+    display: none;
   }
 }
 
