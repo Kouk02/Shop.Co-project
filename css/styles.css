@@ -421,7 +421,7 @@ header {
   }
   .home-page-hero-container {
     width: 1240px;
-    background-image: url(/images/hero-desktop.jpg);
+    background-image: url(../images/hero-desktop.jpg);
     background-repeat: no-repeat;
     background-position: calc(100% + 70px) top;
     padding: 103px 0px 116px 0px;
