@@ -263,11 +263,15 @@
   }
   .container-new-arrivals {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     padding: 32px 0px 24px 0px;
-    flex-wrap: wrap;
-    overflow: hidden;
+    gap: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    box-sizing: border-box;
+    scrollbar-width: none;
   }
   .image-product-item {
     max-width: 198px;
@@ -279,6 +283,7 @@
   }
   .item-list-new-arrivals {
     max-width: 198px;
+    flex-shrink: 0;
   }
   .image-product-item {
     margin-bottom: 10px;
