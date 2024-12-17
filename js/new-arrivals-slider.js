@@ -1,55 +1,59 @@
-// new-arrivals-slider.js
-document.addEventListener('DOMContentLoaded', function () {
-    if (window.innerWidth <= 767) {
-        const slider = document.querySelector('.list-product-new-arrivals');
-        const itemWidth = slider.querySelector('.item-list-new-arrivals').offsetWidth;
-        let startX = 0;
-        let currentPosition = 0;
-        let isDragging = false;
-        const totalItems = slider.children.length;
+const slider = document.querySelector('.list-product-new-arrivals');
+let startX;
 
-        // Touch Start
-        slider.addEventListener('touchstart', function(e) {
-            startX = e.touches[0].clientX;
-            isDragging = true;
-            slider.style.transition = 'none';
-        });
-
-        // Touch Move
-        slider.addEventListener('touchmove', function(e) {
-            if (!isDragging) return;
-            const currentX = e.touches[0].clientX;
-            const diff = startX - currentX;
-            
-            // Обмеження руху
-            const maxMove = (totalItems - 1) * itemWidth;
-            currentPosition -= diff;
-            currentPosition = Math.max(-maxMove, Math.min(0, currentPosition));
-            
-            slider.style.transform = `translateX(${currentPosition}px)`;
-            startX = currentX;
-        });
-
-        // Touch End
-        slider.addEventListener('touchend', function() {
-            isDragging = false;
-            slider.style.transition = 'transform 0.3s ease';
-            
-            // Snap to nearest item
-            const closestItemIndex = Math.round(Math.abs(currentPosition) / itemWidth);
-            currentPosition = -closestItemIndex * itemWidth;
-            
-            slider.style.transform = `translateX(${currentPosition}px)`;
-        });
-    }
+// Обробник для початку свайпу
+slider.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
 });
 
-// Resize handler
-window.addEventListener('resize', function() {
-    const sliderContainer = document.querySelector('.list-product-new-arrivals');
-    if (window.innerWidth <= 767) {
-        sliderContainer.style.transform = 'translateX(0)';
-    } else {
-        sliderContainer.style.transform = '';
-    }
+// Обробник для руху пальця
+slider.addEventListener('touchmove', (e) => {
+  let moveX = e.touches[0].clientX - startX;
+
+  // Якщо рух пальця вліво
+  if (moveX > 50) {
+    slideLeft();
+    startX = e.touches[0].clientX; // оновлення стартової точки
+  }
+  // Якщо рух пальця вправо
+  if (moveX < -50) {
+    slideRight();
+    startX = e.touches[0].clientX; // оновлення стартової точки
+  }
 });
+
+// Функція для прокручування вліво
+function slideLeft() {
+  slider.scrollBy({
+    left: 198 + 5, // ширина ячейки + відстань між ячейками
+    behavior: 'smooth',
+  });
+}
+
+// Функція для прокручування вправо
+function slideRight() {
+  slider.scrollBy({
+    left: -(198 + 5), // ширина ячейки + відстань між ячейками
+    behavior: 'smooth',
+  });
+}
+
+// Додаємо адаптивність до екрану
+window.addEventListener('resize', () => {
+  if (window.innerWidth <= 767) {
+    // якщо ширина екрану менше або рівна 767 пікселів
+    slider.style.overflowX = 'scroll';
+    slider.style.scrollSnapType = 'x mandatory';
+  } else {
+    // якщо ширина екрану більше 767 пікселів
+    slider.style.overflowX = 'hidden';
+  }
+});
+
+// Початкове встановлення для адаптивності
+if (window.innerWidth <= 767) {
+  slider.style.overflowX = 'scroll';
+  slider.style.scrollSnapType = 'x mandatory';
+} else {
+  slider.style.overflowX = 'hidden';
+}
