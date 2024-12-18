@@ -683,6 +683,9 @@ header {
     font-size: 48px;
     margin-top: 72px;
   }
+  .product-container-card {
+    text-align: start;
+  }
   .container-new-arrivals {
     display: flex;
     flex-direction: column;
@@ -750,7 +753,41 @@ header {
     background-color: rgba(255, 51, 51, 0.1);
     padding: 6px 13px;
   }
+  .button-container-new-arrivals {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
   .button-new-arrivals {
+    font-family: "Satoshi", sans-serif;
+    font-weight: medium;
+    font-size: 16px;
+    padding: 18px 80px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 62px;
+    margin-bottom: 64px;
+  }
+  .container-top-selling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 0px 36px 0px;
+  }
+  .list-product-top-selling {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .item-list-top-selling {
+    max-width: 295px;
+  }
+  .button-container-top-selling {
+    display: flex;
+    justify-content: center;
+  }
+  .button-top-selling {
     font-family: "Satoshi", sans-serif;
     font-weight: medium;
     font-size: 16px;
