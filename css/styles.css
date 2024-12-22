@@ -798,6 +798,62 @@ header {
     border-radius: 62px;
     margin-bottom: 64px;
   }
+  .section-styles {
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .container-styles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1240px;
+    background-color: #f0f0f0;
+    border-radius: 40px;
+    padding: 70px 64px 76px 64px;
+  }
+  .title-container-styles {
+    font-family: "Integral CF", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
+  }
+  .list-container-styles-first {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 64px;
+  }
+  .list-container-styles-first li:first-child,
+  .list-container-styles-second li:last-child {
+    width: 100%;
+    max-width: 406px;
+    height: 289px;
+  }
+  .list-container-styles-first li:last-child,
+  .list-container-styles-second li:first-child {
+    width: 100%;
+    max-width: 684px;
+    height: 289px;
+  }
+  .list-container-styles-second {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .image-item-styles {
+    border-radius: 20px;
+    width: 100%;
+  }
+  .title-item-styles {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 36px;
+    font-family: "Satoshi", sans-serif;
+    font-weight: Bold;
+    font-size: 36px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
