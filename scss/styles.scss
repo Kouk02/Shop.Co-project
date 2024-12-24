@@ -454,6 +454,9 @@ header {
 }
 //!
 //! SECTION STYLES
+.image-item-styles-mobile{
+    display: none;
+}
 .section-styles{
     background-color: $white;
     text-align: center;
