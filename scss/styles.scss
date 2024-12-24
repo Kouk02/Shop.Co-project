@@ -293,7 +293,7 @@ header {
     right: -80px;
 }
 
-//Section BRANDS
+//!Section BRANDS
 .home-page-section-brand {
     background-color: $black;
 }
@@ -470,6 +470,7 @@ header {
     background-color: $gallery;
     border-radius: 40px;
     padding: 70px 64px 76px 64px;
+    margin-bottom: 80px;
 }
 .title-container-styles{
     font-family: 'Integral CF', sans-serif;
@@ -512,6 +513,96 @@ header {
     font-family: 'Satoshi', sans-serif;
     font-weight: Bold;
     font-size: 36px;
+}
+//!
+//! SECTION REVIEWS
+.section-reviews{
+    background-color: $white;
+    text-align: center;
+}
+.container-reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.container-list-reviews-title{
+    display: flex;
+    justify-content: center;
+}
+.list-reviews-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1240px;
+    margin-bottom: 40px;
+
+}
+.item-reviews-title button:last-child{
+    margin-left: 16px;
+}
+.title-reviews{
+    font-family: 'Integral CF', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: $black;
+}
+.button-left-list-reviews{
+    margin-top: auto;
+}
+.icon-arrow-reviews{
+    width: 24px;
+    height: 24px;
+}
+
+.container-list-reviews{
+    width: 100%;
+}
+// filter: blur(2px);
+.list-reviews{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.item-card-reviews{
+    width: 400px;
+    border: 1px solid $gallery;
+    border-radius: 20px;
+    text-align: start;
+}
+.container-card-reviews{
+    padding: 28px 32px;
+}
+.container-rating-card-reviews{
+    display: flex;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+.container-content-card-reviews{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.name-person-reviews{
+    font-family: 'Satoshi', sans-serif;
+    font-weight: Bold;
+    font-size: 20px;
+    @include responsive-line-height(20px, 22px);
+}
+.check-mark-icon-reviews{
+    width: 22px;
+    height: 22px;
+    fill: $green-haze;
+}
+.text-person-reviews{
+    font-family: 'Satoshi', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    @include responsive-line-height(16px, 22px);
+    color: $black;
+    opacity: 60%;
 }
 //!
 //! End HOME-PAGE
