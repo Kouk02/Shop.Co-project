@@ -910,14 +910,35 @@ header {
     font-size: 36px;
   }
   .section-reviews {
+    overflow: hidden;
     background-color: #ffffff;
     text-align: center;
   }
   .container-reviews {
+    position: relative;
+    max-width: 1240px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 80px;
+    overflow: visible;
+  }
+  .container-reviews::before,
+  .container-reviews::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    background: inherit;
+    backdrop-filter: blur(2px);
+    z-index: 1;
+  }
+  .container-reviews::before {
+    right: 100%;
+  }
+  .container-reviews::after {
+    left: 100%;
   }
   .container-list-reviews-title {
     display: flex;
@@ -947,13 +968,12 @@ header {
     width: 24px;
     height: 24px;
   }
-  .container-list-reviews {
-    width: 100%;
-  }
   .list-reviews {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-left: -420px;
+    width: max-content;
   }
   .item-card-reviews {
     width: 400px;
