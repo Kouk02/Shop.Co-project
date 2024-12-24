@@ -441,6 +441,99 @@
     font-weight: Bold;
     font-size: 24px;
   }
+  .section-reviews {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  .container-reviews {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 358px;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .container-list-reviews-title {
+    display: flex;
+    justify-content: center;
+  }
+  .list-reviews-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .item-reviews-title button:last-child {
+    margin-left: 16px;
+  }
+  .title-reviews {
+    font-family: "Integral CF", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.125;
+    color: #000000;
+    width: 286px;
+    height: 72px;
+  }
+  .icon-arrow-reviews {
+    width: 20px;
+    height: 20px;
+  }
+  .list-reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: max-content;
+  }
+  .item-card-reviews {
+    max-width: 358px;
+    border: 1px solid #f0f0f0;
+    border-radius: 20px;
+    text-align: start;
+  }
+  .container-list-reviews {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .container-list-reviews::-webkit-scrollbar {
+    display: none;
+  }
+  .container-card-reviews {
+    padding: 24px 24px;
+  }
+  .container-rating-card-reviews {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 12px;
+  }
+  .container-content-card-reviews {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .name-person-reviews {
+    font-family: "Satoshi", sans-serif;
+    font-weight: Bold;
+    font-size: 16px;
+    line-height: 1.375;
+  }
+  .check-mark-icon-reviews {
+    width: 20px;
+    height: 20px;
+    fill: #01ab31;
+  }
+  .text-person-reviews {
+    font-family: "Satoshi", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.4285714286;
+    color: #000000;
+    opacity: 60%;
+  }
 }
 body {
   font-family: "Plus Jakarta Sans", medium;
@@ -912,7 +1005,6 @@ header {
   .section-reviews {
     overflow: hidden;
     background-color: #ffffff;
-    text-align: center;
   }
   .container-reviews {
     position: relative;
