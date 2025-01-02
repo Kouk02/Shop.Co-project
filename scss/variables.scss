@@ -32,14 +32,14 @@ $font-satoshi-medium: '../fonts/Satoshi-Medium.otf';
 @font-face {
   font-family: 'Integral CF';
   src: url($font-integral-regular) format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Integral CF';
   src: url($font-integral-bold) format('truetype');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -53,14 +53,14 @@ $font-satoshi-medium: '../fonts/Satoshi-Medium.otf';
 @font-face {
   font-family: 'Satoshi';
   src: url($font-satoshi-regular) format('opentype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Satoshi';
   src: url($font-satoshi-bold) format('opentype');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 

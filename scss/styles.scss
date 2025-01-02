@@ -626,5 +626,71 @@ header {
     opacity: 60%;
 }
 //!
+//! SECTION FOOTER
+.background-container-footer{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, $white 50%, $gallery 50%);
+}
+.list-container-subscribe-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 212px;
+    background-color: $black;
+    padding: 36px 64px;
+    border-radius: 20px;
+    max-width: 1240px;
+    width: 100%;
+}
+.title-container-subscribe{
+    font-family: 'Integral CF', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    @include responsive-line-height(40px, 48px);
+    color: $white;
+}
+.footer-email-icon{
+    fill: $black;
+    opacity: 40%;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.item-list-subscribe-footer:nth-child(2){
+    max-width: 349px;
+    width: 100%;
+}
+.footer-email-span{
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    padding: 12px 124px 12px 17px;
+    border-radius: 62px;
+}
+.input-item-email{
+    border: none;
+    outline: none;
+    all: unset;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: $black;
+    opacity: 40%;
+    box-sizing: border-box;
+    width: 100%
+}
+.button-footer-subcribe{
+    padding: 12px 89px;
+    margin-top: 14px;
+    background-color: $white;
+    border-radius: 62px;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: $black;
+    white-space: nowrap;
+}
+//!
 //! End HOME-PAGE
 }

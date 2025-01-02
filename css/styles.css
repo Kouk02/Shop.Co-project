@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Integral CF";
   src: url("../fonts/IntegralCF-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Integral CF";
   src: url("../fonts/IntegralCF-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -19,13 +19,13 @@
 @font-face {
   font-family: "Satoshi";
   src: url("../fonts/Satoshi-Regular.otf") format("opentype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Satoshi";
   src: url("../fonts/Satoshi-Bold.otf") format("opentype");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -1105,6 +1105,70 @@ header {
     line-height: 1.375;
     color: #000000;
     opacity: 60%;
+  }
+  .background-container-footer {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ffffff 50%, #f0f0f0 50%);
+  }
+  .list-container-subscribe-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 212px;
+    background-color: #000000;
+    padding: 36px 64px;
+    border-radius: 20px;
+    max-width: 1240px;
+    width: 100%;
+  }
+  .title-container-subscribe {
+    font-family: "Integral CF", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+  .footer-email-icon {
+    fill: #000000;
+    opacity: 40%;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+  }
+  .item-list-subscribe-footer:nth-child(2) {
+    max-width: 349px;
+    width: 100%;
+  }
+  .footer-email-span {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 12px 124px 12px 17px;
+    border-radius: 62px;
+  }
+  .input-item-email {
+    border: none;
+    outline: none;
+    all: unset;
+    font-family: "Satoshi", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000000;
+    opacity: 40%;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .button-footer-subcribe {
+    padding: 12px 89px;
+    margin-top: 14px;
+    background-color: #ffffff;
+    border-radius: 62px;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    white-space: nowrap;
   }
 }
 
