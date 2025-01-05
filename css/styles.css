@@ -1232,6 +1232,102 @@ header {
     color: #000000;
     white-space: nowrap;
   }
+  .container-footer-navigations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  .container-footer-navigation-content {
+    display: flex;
+    justify-content: center;
+    gap: 113px;
+    width: 1240px;
+    height: 177px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .footer-list-navigations-first {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-list-navigations {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-list-navigations-first-item-text {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5714285714;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  .foooter-list-navigations-first-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-navigations-icon {
+    width: 15px;
+    height: 15px;
+  }
+  .footer-list-navigations-title {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 1.125;
+    margin-bottom: 26px;
+  }
+  .footer-list-navigations > li:not(:last-child) {
+    margin-bottom: 14px;
+  }
+  .footer-list-navigations-button {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1875;
+    color: #000000;
+    opacity: 60%;
+    white-space: nowrap;
+  }
+  .footer-container-payment-options {
+    display: flex;
+    width: 1240px;
+    justify-content: space-between;
+    padding-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 82px;
+  }
+  .footer-container-payment-options-text {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    opacity: 60%;
+  }
+  .footer-container-payment-options-list {
+    display: flex;
+    gap: 12px;
+  }
+  .footer-container-payment-options-list-item {
+    width: 46px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  .footer-container-payment-options-list-item:nth-child(1) {
+    fill: #063af5;
+  }
+  .footer-payment-icon {
+    width: 46px;
+    height: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
